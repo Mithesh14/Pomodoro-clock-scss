@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Pomodoro clock</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+<body style="background:url(images/image.jpg);background-size:100% " onload="init()">
+<div id="pomodoro" class="box">
+  <div id="clock">
+    <div id="timer">
+      <div id="options">
+        <button id="sessiondown" type='submit'>
+          <i class="fa fa-angle-double-left"></i>
+        </button>
+        <div id="countdown">
+          <span id="minutes">14</span>
+          <span id="seconds">00</span>   
+        </div>
+        <button id="sessionup" type='submit'>
+          <i class="fa fa-angle-double-right"></i>
+        </button>
+      </div>
+      
+      <div id="controls" class="reset">
+        <button id="start"><i class="fa fa-play"></i> Start</button>
+        <button id="reset"><i class="fas fa-redo-alt"></i> Reset</button>
+      </div>
+      <p>Done by Mithesh</p>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

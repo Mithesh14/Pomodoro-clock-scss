@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'Saira Stencil One', cursive;
+  overflow: hidden;
+}
+
+.box {
+  width: 90%;
+}
+
+#pomodoro {
+  margin: 1.5rem auto;
+}
+
+#pomodoro #clock {
+  background-size: contain;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -6.25vw;
+  padding: 16rem 0;
+}
+
+#pomodoro #clock #timer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pomodoro #clock #timer #countdown {
+  color: #020916;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 5rem;
+  line-height: 4rem;
+}
+
+#pomodoro #clock #timer #countdown #minutes::after {
+  content: ":";
+}
+
+#pomodoro #clock #timer #controls {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 700;
+  margin-top: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#pomodoro #clock #timer #controls .fas, #pomodoro #clock #timer #controls .svg-inline--fa {
+  position: relative;
+}
+
+#pomodoro #clock #timer #controls #start, #pomodoro #clock #timer #controls #reset {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+#pomodoro #clock #timer #controls #start:hover, #pomodoro #clock #timer #controls #reset:hover {
+  color: #f2f2f2;
+}
+
+#pomodoro #clock #timer #controls #start {
+  margin-right: 1.5rem;
+}
+
+#pomodoro #options {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+#pomodoro #options .fa-angle-double-right {
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+}
+
+#pomodoro #options .fa-angle-double-left {
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+#pomodoro #options input[type=number] {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d3f9f2), to(#00d0ae));
+  background: linear-gradient(#d3f9f2, #00d0ae);
+  border: 0;
+  border-bottom: calc(2px + .28vw) solid #a7f2e5;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  margin: calc(5px + .43vw) calc(3px + .43vw);
+  padding: calc(3px + .43vw) calc(5px + .43vw);
+  text-align: center;
+}
+
+#pomodoro #options input[type=number]::-webkit-inner-spin-button, #pomodoro #options input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+#pomodoro button {
+  border: none;
+  background-color: transparent;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .box {
+    width: 100%;
+  }
+  #pomodoro {
+    margin: 5rem auto;
+  }
+  #pomodoro #clock {
+    background-size: 100%;
+    margin-bottom: 1rem;
+    padding: 6rem 0;
+  }
+  #pomodoro #clock #countdown {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  #pomodoro #clock #timer #options {
+    font-size: .8rem;
+    margin: 1rem 0;
+  }
+  #pomodoro #clock #timer #options .fa-angle-double-right {
+    font-size: .8rem;
+    margin-left: .5rem;
+  }
+  #pomodoro #clock #timer #options .fa-angle-double-left {
+    font-size: .8rem;
+    margin-left: .5rem;
+  }
+  #pomodoro #clock #timer #controls #start {
+    margin-right: .5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

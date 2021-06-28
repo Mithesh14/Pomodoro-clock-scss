@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+* {
+  box-sizing: border-box;
+  outline: none;
+  user-select: none;
+  font-family: 'Saira Stencil One', cursive;
+  overflow: hidden;
+}
+
+.box {
+  width:90%;
+}
+
+#pomodoro {
+  margin: 1.5rem auto;
+  
+  #clock {
+    background-size: contain;
+    justify-content: center;
+    margin-bottom: -6.25vw;
+    padding: 16rem 0;
+    
+    #timer {
+      $hover: 5;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      
+      #countdown {
+        color: #020916;
+        display: flex;
+        font-size: 5rem;
+        line-height: 4rem;
+        
+        #minutes::after {
+          content: ":";
+        }
+      }
+      
+      #controls { 
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        font-weight: 700;
+        margin-top: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        .fas, .svg-inline--fa {
+          position: relative;
+        }
+        #start, #reset {
+          white-space: nowrap;
+          font-size: 1.5rem;
+          color: whitesmoke;
+          &:hover {
+            color: darken(white, $hover);
+          }
+        }
+        
+        #start {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+  
+  #options {
+    color: white;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+    text-align: center;
+    
+    .fa-angle-double-right {
+      cursor: pointer;
+      color: white;
+      font-size: 1.2rem;
+      margin-left: 1.2rem;
+    }
+    .fa-angle-double-left {
+      cursor: pointer;
+      color: white;
+      font-size: 1.2rem;
+      margin-right: 1.2rem;
+    }
+    input[type=number]{
+      background: linear-gradient(lighten(#a7f2e5, 10), lighten(#006050, 22));
+      border: 0;
+      border-bottom: calc(2px + .28vw) solid #a7f2e5;
+      border-radius: 50%;
+      color: white;
+      font-size: 2rem;
+      margin: calc(5px + .43vw) calc(3px + .43vw);
+      padding: calc(3px + .43vw) calc(5px + .43vw);
+      text-align: center;
+      &::-webkit-inner-spin-button, 
+      &::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+      }
+    }
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+p
+{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .box {
+    width: 100%;
+  }
+  
+  #pomodoro {
+    margin: 5rem auto;
+    
+    #clock {
+      background-size: 100%;
+      margin-bottom: 1rem;
+      padding: 6rem 0;
+    
+      #countdown {
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+      #timer{
+        
+        #options {
+          font-size: .8rem;
+          margin: 1rem 0;
+
+          .fa-angle-double-right {
+            font-size: .8rem;
+            margin-left: .5rem;
+          }
+          .fa-angle-double-left {
+            font-size: .8rem;
+            margin-left: .5rem;
+          }
+        }
+        
+        #controls {
+          #start {
+            margin-right: .5rem;
+          }
+        }
+      } 
+    }
+  }
+}
