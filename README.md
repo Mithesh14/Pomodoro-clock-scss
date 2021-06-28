@@ -4,7 +4,7 @@
 
 # Project link
 
-<a href="https://mithesh14.github.io/Github-profile/">Pomodoro clock</a>
+<a href="https://mithesh14.github.io/Pomodoro-clock-scss/">Pomodoro clock</a>
 
 # Screenshots 
 
